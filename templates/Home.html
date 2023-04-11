@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=========================== Icon Browser =================================-->
+    <link rel="shortcut icon" type="x-icon" href="./images/logo.png">
+    <!--=========================== font-awesome File ============================-->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--=========================== Bootstrap File ===============================-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!--=========================== Font Google ===============================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!--=========================== Css File =====================================-->
+    <link rel="stylesheet" href="./sass/Master.css">
+    <title>قطرة</title>
+</head>
+<body>
+    <!---=========================== Start Navbar =====================================--->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="Home.html">
+            <img src="images/logo.png">
+            <p>قطرة</p>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i  class="fa-solid fa-bars"></i>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <il class="navbar_item">
+                    <a href="Home.html" class="navbar__link active">الرئيسية</a>
+                </il>
+                <il class="navbar_item">
+                    <a href="#donation" class="navbar__link">اريد التبرع </a>
+                </il>
+                <il class="navbar_item">
+                    <a href="#donation__prosess" class="navbar__link">طلب متبرع</a>
+                </il>
+                <il class="navbar_item">
+                    <a href="#donation__steps" class="navbar__link">خطوات التبرع</a>
+                </il>
+                <il class="navbar_item">
+                    <a href="#donation__information" class="navbar__link">معلومات </a>
+                </il>
+                <il class="navbar_item">
+                    <a href="#who__us" class="navbar__link">من نحن </a>
+                </il>
+            </ul>
+            <form class="submit_btm me-auto">
+                <button type="button" id="submit_btn" class="btn submit_btn" onclick="openPopup()" ondblclick="closePopup()">تسجيل الدخول</button>
+                <div id="popup" class="popup text-center">
+                    <img src="images/carton.png" alt="">
+                    <h1 class="pop-header">انتبه !!</h1>
+                    <p class="pop-paragraph">لكي تسطيع استخدام موقع قطره 
+                        عليك بتسجيل الدخول اولا !! 
+                    </p>
+                    <button type="button" class="btn btn-danger"> 
+                        <a href="Login.html" target="_blank">تسجيل دخول/انشاء حساب </a>
+                    </button>
+                </div>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!---=========================== End Navbar =====================================--->
+    <!---=========================== Start Home =====================================--->
+    <section class="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 content">
+                    <div class="home__contant">
+                        <h3>ماهي قطرة !!</h3>
+                        <p class="paragraph">نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع 
+                            نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع  نبذه عن الموقع نبذه عن الموقع 
+                            نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع 
+                            نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع 
+                            نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع  نبذه عن الموقع نبذه عن الموقع 
+                            نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع نبذه عن الموقع 
+                            نبذه عن الموقع نبذه عن الموقع </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---=========================== End Home =====================================--->
+    <!---=========================== Start donation ===============================--->
+    <section class="donation " id="donation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 content">
+                    <h3 class="header">اريد التبرع </h3>
+                    <p class="paragraph">يمكنك التبرع بدم من خلال قطرة ,عن طريق الضغط على زر  (تبرع) ,
+                        و ملئ  استمارة الخاصه بتبرع ,
+                        وسوف نرسل لك اقرب مستشفى بحاجه اليك   و يمكنك التبرع بدم من خلال قطرة 
+                        ,عن طريق الضغط على زر  (تبرع) ,و ملئ  استمارة الخاصه بتبرع ,
+                        وسوف نرسل لك اقرب مستشفى بحاجه اليك   </p>
+                    <button class="submit_btn" type="submit">اريد التبرع</button>  
+                    <div class="carton">
+                        <img src="images/carton.png" alt="">
+                    </div>  
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 video">
+                    <video src="video/قطرة ‑ Made with FlexClip (1).mp4" loop autoplay muted width="100%" height="100%"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---=========================== End donation =====================================--->
+    <!---=========================== start donation prosess============================--->
+    <section class="donation__prosess " id="#donation__prosess">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <h3 class="header">فوائد تبرعك بدم !</h3>
+                    <img src="images/donation__prosess.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---=========================== End donation prosess=====================================--->
+    <!---=========================== start donation order===================================--->
+    <section class="donation__order mt-5 mb-5 " id="donation__prosess">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 content">
+                    <h3 class="header">طلب متبرع</h3>
+                    <p class="paragraph">يمكنك التبرع بدم من خلال قطرة ,عن طريق الضغط على زر  (تبرع) ,
+                        و ملئ  استمارة الخاصه بتبرع ,
+                        وسوف نرسل لك اقرب مستشفى بحاجه اليك   و يمكنك التبرع بدم من خلال قطرة 
+                        ,عن طريق الضغط على زر  (تبرع) ,و ملئ  استمارة الخاصه بتبرع ,
+                        وسوف نرسل لك اقرب مستشفى بحاجه اليك   </p>
+                    <button class="submit_btn" type="submit">طلب متبرع</button>    
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 image">
+                    <img class="w-100" src="images/photo 4.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---=========================== End donation order=====================================--->
+    <!---=========================== start donation steps===================================--->
+    <section class="donation__steps text-center " id="donation__steps">
+        <div class="container">
+            <div class="row">
+                <h3 class="header">خطوات التبرع بالدم </h3>
+                <div class="steps_box col-lg-12 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                    <div class="step_shape">
+                        <span>1</span>
+                        <img class="img" src="images/form 1.png" alt="">
+                        <img class="Ellipse" src="images/Ellipse 1.png" alt="">
+                    </div>
+                    <p>مرحله التسجيل وتعبئه استبيان </p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 steps_box d-flex align-items-center justify-content-center">
+                    <div class="step_shape">
+                        <img class="img" src="images/arm 1.png" alt="">
+                        <span>2</span>
+                        <img class="Ellipse" src="images/Ellipse 1.png" alt="">
+
+                    </div>
+                    <p>مرحله اجراء المقابله الطبية</p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 steps_box d-flex align-items-center justify-content-center">
+                    <div class="step_shape">
+                        <img class="img"  src="images/blood-bag 1.png" alt="">
+                        <span>3</span>
+                        <img class="Ellipse" src="images/Ellipse 1.png" alt="">
+                    </div>
+                    <p>الفحص السريري لتحديد الوزن , وقياس 
+                        ضغط الدم ودرجه الحراره والنبض ونبسه الهيموجلبين
+                    </p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 steps_box d-flex align-items-center justify-content-center">
+                    <div class="step_shape">
+                        <img class="img"  src="images/check-up 1.png" alt="">
+                        <span>4</span>
+                        <img class="Ellipse" src="images/Ellipse 1.png" alt="">
+                    </div>
+                    <p>مرحله سحب الدم  </p>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 steps_box d-flex align-items-center justify-content-center">
+                    <div class="step_shape">
+                        <img class="img"  src="images/blood-bank 1.png" alt="">
+                        <span>5</span>
+                        <img class="Ellipse" src="images/Ellipse 1.png" alt="">
+                    </div>
+                    <p>مرحله الرعايه بعد التبرع </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---=========================== End donation steps=====================================--->
+    <!---=========================== start donation information===================================--->
+    <section class="donation__information mt-5 mb-5" id="donation__information">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h3 class="header m-auto">خطوات التبرع بالدم </h3>
+                    <dl>
+                        <dt>التبرع بالدم:</dt>
+                        <dd>
+                            هو إجراء طبي تطوعي يتم بنقل الدم أو أحد مركباته من شخص سليم معافى إلى شخص مريض يحتاج للدم. وهذا الإجراء يحتاج إليه الملايين من الناس كل عام؛
+                            فيستخدم أثناء الجراحة أو الحوادث أو بعض الأمراض التي تتطلب نقل بعض مكونات الدم. أنواع التبرع بالدم:• الدم الكامل: هذا هو النوع الأكثر شيوعًا في عمليات التبرع بالدم؛
+                             حيث يشمل جميع مكونات الدم (الخلايا الحمراء والبلازما والصفائح الدموية)..• الصفائح الدموية.• البلازما.• خلايا الدم الحمراء.
+                        </dd>
+                        <dt>أهمية التبرع بالدم:</dt>
+                        <dd>
+                            عملية نقل الدم من العمليات التي تسهم في إنقاذ الأرواح؛ فيُعطى في مثل هذه الحالات:• عند حدوث مضاعفات للسيدات الحوامل، مثل حالات النزف قبل الولادة أو خلالها أو بعدها.• للمرضى أثناء العمليات الجراحية مثل عمليات القلب، الأوعية الدموية، جراحة زراعة الأعضاء وغيرها.• للمصابين بأمراض الدم.• للمصابين في الحوادث.• مرضى السرطان
+                        </dd>
+                        <dt>شروط التبرع بالدم:</dt>
+                        <dd>
+                            أن يكون المتبرع بصحة جيدة ولا يعاني أي أمراض معدية.• أن يكون عمر المتبرع من 18-65 سنة.• يجب ألا يقل وزن المتبرع عن 50 كجم.• أن تكون نسبة الهيموجلوبين للرجال من 14- 17 جم، وللنساء من 12-14 جم.• أن يكون النبض بين 50-100 في الدقيقة.• ألا تزيد درجة الحرارة عن 37 درجة مئوية.• أن يكون معدل ضغط الدم أقل من120/80 ملم زئبق.
+                        </dd>
+                        <dt>كمية الدم المتبرع به:</dt>
+                        <dd>
+                            يمكن للشخص البالغ الذي يتمتع بصحة جيدة أن يتبرع بحوالي (450-500 مل) من دمه دون أي مخاوف أو أخطار على صحته، ويمكنه التبرع كل شهرين بحيث لا يزيد عدد مرات التبرع على 5 مرات في السنة
+                        </dd>
+                        <dt>الحالات التي لا يسمح لها بالتبرع بالدم:</dt>
+                        <dd>
+                            أقل من عمر 18 سنة.• المصابون بأمراض معدية مثل (الإيدز، التهاب الكبد ب وج، الزهري، الملاريا)• المصابون بأمراض الدم الوراثية.• المصابون بفقر الدم الحاد.• المصابون بالأمراض المزمنة، مثل السكري، ارتفاع ضغط الدم، السرطان.
+                        </dd>
+                        <dt>نصائح بعد التبرع بالدم:</dt>
+                        <dd>
+                            نصائح بعد التبرع بالدم:• بعد التبرع تأخذ قسطًا من الراحة وتتناول وجبة خفيفة وبعد 10 -15 دقيقة يمكنك مغادرة مكان التبرع• تجنب النشاط البدني الشاق أو رفع الأحمال الثقيلة لمدة 5 ساعات بعد التبرع.• عند الشعور بـ"الدوخة" ينصح بالاستلقاء علي الظهر مع رفع القدمين.• الإكثار من شرب السوائل.
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---=========================== End donation information=====================================--->
+    <!---=========================== start footer steps===================================--->
+<!--
+    <footer class="footer" id="#who__us">
+        <div class="container">
+            <div class="row">
+                <div class="footer__row col-lg-12 col-md-12 col-sm-12">
+                    <h4>من نحن ؟؟</h4>
+                    <p>نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  نص نصص نص نص نص نص نص نص نص نص  </p>
+                </div>
+                <div class="footer__row col-lg-12 col-md-12 col-sm-12 text-center">
+                    <h3>تواصل معانا : </h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin linkedin"></i></a></li>
+                    </ul>
+                    <a class="conditions" href="#">الشروط و الاحكام</a>
+                    <a href="#">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!---=========================== End footer=====================================--->
+    <!---=========================== Jquery File =====================================--->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <!--=========================== Bootstrap File =====================================-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--=========================== Js File =====================================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

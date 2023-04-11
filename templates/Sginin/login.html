@@ -1,0 +1,21 @@
+{% load socialaccount %}
+{% providers_media_js %}
+<h3>login</h3>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {% comment %} {% for field in form %}
+        <p>{{ field.label }}: <br> {{ field }}</p>
+    {% endfor %} {% endcomment %}
+    <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username">
+    <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+    <button type="submit">Login</button>
+
+    <button class="btn btn-danger  mb-2">
+        <a href="{% provider_login_url "google" %}">Continue Via Google</a>
+    </button>
+    <button><a href="http://127.0.0.1:8000/Auth/SignUpBB/">Sign up With BloodBank</a></button>
+    <button><a href="http://127.0.0.1:8000/Auth/password-reset/">Forget Password?</a></button>
+   
+  
+</form>
